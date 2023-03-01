@@ -1,45 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:state_checked="true">
-        <layer-list>
-            <item>
-                <shape android:shape="oval">
-                    <corners android:radius="1dp" />
-                    <size
-                        android:width="30dp"
-                        android:height="30dp" />
-                </shape>
-            </item>
-
-            <item
-                android:width="8dp"
-                android:height="2dp"
-                android:top="20dp"
-                android:left="6dp">
-                <rotate
-                    android:fromDegrees="45">
-                    <shape android:shape="oval">
-                        <corners android:radius="1dp"/>
-                        <solid android:color="@color/textColor"/>
-                    </shape>
-                </rotate>
-            </item>
-
-            <item
-                android:width="19dp"
-                android:height="2dp"
-                android:top="16dp"
-                android:left="9dp">
-                <rotate
-                    android:fromDegrees="-45">
-                    <shape android:shape="oval">
-                        <corners android:radius="1dp"/>
-                        <solid android:color="@color/textColor"/>
-                    </shape>
-                </rotate>
-            </item>
-        </layer-list>
-    </item>
-
-</selector>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportHeight="24"
+    android:viewportWidth="24">
+    <path
+        android:name="circle"
+        android:pathData="M12,2 C17.5228,2,22,6.47715,22,12 C22,17.5228,17.5228,22,12,22 C6.47715,22,2,17.5228,2,12 C2,6.47715,6.47715,2,12,2 Z"
+        android:fillColor="@color/backgroundBtn"
+        android:strokeWidth="1.5" />
+    <path
+        android:name="tick"
+        android:pathData="M6,10 L10.254,15.348 L21.265,4"
+        android:strokeColor="@color/textColor"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="1.5" />
+</vector>

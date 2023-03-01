@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Maket31P</string>
     <string name="doNotHaveAccount">
-        <font color = "#1D68FF">Don\'t have an account? Let\'s </font><font color='#1D68FF'><b>Register</b></font>
+        <font color="#1D68FF">Don\'t have an account? Let\'s </font><font color='#1D68FF'><b>Register</b></font>
     </string>
+    <string name="already">
+        <font color="#1D68FF">Already registered ?Let’s  </font><font color='#1D68FF'><b>Login</b></font>
+    </string>
+    <string name="teamName">
+        <font color="#1D68FF">Product of </font><font color='#1D68FF'><b>Team Name</b></font>
+    </string>
+    <string name="Agree">I agree with terms &amp; conditions </string>
 </resources>

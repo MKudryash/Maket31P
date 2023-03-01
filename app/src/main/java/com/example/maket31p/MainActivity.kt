@@ -1,5 +1,6 @@
 package com.example.maket31p
 
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,14 +10,25 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.annotation.RequiresApi
-import androidx.core.widget.addTextChangedListener
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         forTextChanged()
+        init()
     }
+    fun init()
+    {
+        var textView = findViewById<TextView>(R.id.txtStartRegister)
+
+        textView.setOnClickListener()
+        {
+            val intent = Intent(this,RegisterState::class.java)
+            startActivity(intent)
+        }
+    }
+
     fun forTextChanged() {
         var login = findViewById<EditText>(R.id.editTextTextPersonName)
         var password = findViewById<EditText>(R.id.editTextTextPassword)
@@ -35,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                 if(login.text.length==0||password.text.length==0)
                 {
                     btnLogIn.setTextColor(this@MainActivity.getColor(R.color.textColor))
-                    btnLogIn.background = this@MainActivity.getDrawable(R.drawable.backgroun_text_btn)
+                    btnLogIn.background = this@MainActivity.getDrawable(R.drawable.background_text_btn)
 
                 }
             }
@@ -58,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                 if(login.text.length==0||password.text.length==0)
                 {
                     btnLogIn.setTextColor(this@MainActivity.getColor(R.color.textColor))
-                    btnLogIn.background = this@MainActivity.getDrawable(R.drawable.backgroun_text_btn)
+                    btnLogIn.background = this@MainActivity.getDrawable(R.drawable.background_text_btn)
 
                 }
             }
